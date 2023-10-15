@@ -1,0 +1,54 @@
+@media only screen and (max-width: 900px) {
+  .nav_tabs {
+    display: none;
+  }
+  .fa-bars {
+    display: block !important;
+    font-size: 2.3rem;
+  }
+  #home .text {
+    width: 400px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  #about_us img {
+    width: 500px;
+  }
+  .about-text {
+    text-align: center;
+    align-items: center;
+  }
+  .perks {
+    justify-content: space-evenly;
+    gap: 0rem;
+  }
+  .links{
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .center-img {
+    top: 0;
+    width: 400px;
+  }
+  #about_us img {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .center-img {
+    width: 350px;
+  }
+  .services_card {
+    width: 350px;
+  }
+  #about_us img {
+    width: 350px;
+  }
+  .contact_container .img_container img {
+    width: 350px;
+    height: 350px;
+  }
+}

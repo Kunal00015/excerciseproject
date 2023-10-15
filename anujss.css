@@ -1,0 +1,143 @@
+
+/* Home Section */
+#home{
+    display: list-item;
+    padding:3px 100px;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('img/background2.jpg') no-repeat center center/cover;
+    height: 350px;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:black;
+    text-align:center;
+    font-size: 2.0rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services
+{
+    margin: 10px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid rgb(0, 0, 0);
+    padding: 35px;
+    margin: 2px 60px;
+    border-radius: 28px;
+    background: whitesmoke;
+    margin-bottom: 20px;
+}
+
+#services .box img
+{ 
+   height: 200px;
+   margin: 10px;
+   display: block;
+}
+
+#services .box p
+{
+    text-align:justify;   
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+} 
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('img/contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    display: flex;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    text-align: center;
+}
+.btn:hover
+{
+    background-color: brown;
+    color:white;
+}
+
+.center{
+    text-align: center;
+}
+
+

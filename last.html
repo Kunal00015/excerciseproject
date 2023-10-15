@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lunges Counter</title>
+</head>
+<body>
+  <video id="video" autoplay></video>
+  <canvas id="canvas"></canvas>
+
+  <script>
+    // Initialize variables
+    let kneeDown = false;
+    let lungeCount = 0;
+
+    // Access the video element
+    const video = document.getElementById('video');
+
+    // Access the canvas element
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Access the user's camera and stream video to the video element
+    async function initCamera() {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+      video.srcObject = stream;
+    }
+
+    // Process each video frame
+    function processFrame() {
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+      // Convert frame to grayscale for processing
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const grayData = new Uint8ClampedArray(imageData.data.length / 4);
+
+      for (let i = 0; i < grayData.length; i++) {
+        const r = imageData.data[i * 4];
+        const g = imageData.data[i * 4 + 1];
+        const b = imageData.data[i * 4 + 2];
+        grayData[i] = 0.299 * r + 0.587 * g + 0.114 * b;
+      }
+
+      // Use contour detection to find the knee area
+      // (Replace this part with actual contour detection in JavaScript)
+      const contours = []; // Store detected contours
+
+      for (const contour of contours) {
+        // Check the area of the contour to filter noise
+        if (contour.area > 500) {
+          // Check if the knee is down based on its position
+          const y = contour.centerY;
+          if (y > canvas.height / 2) {
+            if (!kneeDown) {
+              kneeDown = true;
+            }
+          } else {
+            if (kneeDown) {
+              lungeCount++;
+              kneeDown = false;
+            }
+          }
+        }
+      }
+
+      // Display lunge count on the frame
+      ctx.font = '20px Arial';
+      ctx.fillStyle = 'white';
+      ctx.fillText(`Lunges: ${lungeCount}`, 10, 30);
+
+      // Continue processing frames
+      requestAnimationFrame(processFrame);
+    }
+
+    // Start the camera and processing
+    initCamera().then(() => {
+      video.addEventListener('play', () => {
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        processFrame();
+      });
+    });
+  </script>
+</body>
+</html>

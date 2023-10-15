@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>football</title>
+  <link rel="stylesheet" href="Style/style.css" />
+  <link rel="stylesheet" href="Style/stylcss.css" />
+  <link rel="stylesheet" href="Style/responsive.css" />
+  <script src="https://kit.fontawesome.com/06a2b6138b.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="alert">Your message sent</div>
+  <nav>
+
+    <!-- <h1>CSWD</h1> -->
+
+    <img src="Photos/Add a heading.png" />
+    <ul class="nav_tabs">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about_us">About</a></li>
+      <li><a href="#services">Service</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact_us">Contact Us</a></li>
+    </ul>
+    <i class="fa-solid fa-bars"></i>
+    <ul class="nav_tabs2">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about_us">About</a></li>
+      <li><a href="#services">Service</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact_us">Contact Us</a></li>
+    </ul>
+  </nav>
+  <header id="home">
+    <div class="text">
+      <h1 data-aos="zoom-in" data-aos-delay="250" data-aos-easing="ease-in-out">
+        <B>KICK OFF</B>
+      </h1>
+      <p data-aos="zoom-in" data-aos-delay="250" data-aos-easing="ease-in-out">
+        If you don't
+        <span> PRACTICE </span> you don't deserve to <span> WIN </span>.
+      </p>
+    </div>
+    <div class="img-container" data-aos="zoom-in" data-aos-delay="250" data-aos-easing="ease-in-out">
+      <img src="kick1.png" class="center-img" />
+    </div>
+  </header>
+  <main>
+    <!-- <!*******************************************>
+      <!                About US                   > -->
+
+    <section id="about_us">
+      <img src="ronaldo1.png" alt="test" data-aos="fade-right" data-aos-delay="50"
+        data-aos-easing="ease-in-out" />
+      <div class="about-text">
+        <h1 data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out">
+          About Us
+        </h1>
+        <h3 data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out">
+          Welcome to the kickoff website
+        </h3>
+        <p data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out">
+          Welcome to our website, your hub for all things related to nearby football clubs. Delve into training routines
+          that local clubs offer, gain insights into effective workouts, and access valuable dietary tips. Whether
+          you're an aspiring athlete or a football enthusiast, we provide comprehensive information to elevate your
+          game. Join us in exploring the world of football, from grassroots to professional levels, and unlock the
+          secrets to success on and off the field.
+        </p>
+        <ul class="perks" data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out">
+          <div class="b1">
+            <li><i class="fa-solid fa-check"></i>CLUBS</li>
+            <li><i class="fa-solid fa-check"></i>TRAINING</li>
+            <li><i class="fa-solid fa-check"></i>NEWS</li>
+          </div>
+          <div class="b2">
+            <li><i class="fa-solid fa-check"></i>NUTRITION</li>
+            <li><i class="fa-solid fa-check"></i>PROXIMITY</li>
+          </div>
+        </ul>
+        <div class="links" data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out">
+          <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+          <a href="http://"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <!*******************************************> -->
+ 
+    <section id="services">
+      <div class="title" data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out" onclick="navigateToOtherPage()">
+        <h1>Our Services</h1>
+      </div>
+      <div class="services_container">
+        <div class="services_card" data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out" onclick="navigateToOtherPage()">
+          <img src="training.png" width="150" height="80"  class="nut">
+          <style>
+            .nut{
+              font-size: 4rem;
+              text-align: center;
+              margin-top: 18px;
+              margin-left: auto;
+              margin-right: auto;
+             }
+          </style>
+          <h1>Training</h1>
+          <div class="content">
+            <p>
+              Elevate skills with expert guidance.
+            </p>
+          </div>
+        </div>
+        <div class="services_card" data-aos="zoom-in" data-aos-delay="100" data-aos-easing="ease-in-out" onclick="navigateToclubs()">
+          <i class="icon fa-solid fa-handshake-angle"></i>
+          <h1>Club collaboration</h1>
+          <div class="content">
+            <p>
+              Connect with local football communities.
+            </p>
+          </div>
+        </div>
+        <div class="services_card" data-aos="zoom-in" data-aos-delay="150" data-aos-easing="ease-in-out" onclick="navigateTonutritions()">
+          <img src="nutrients.jpeg" width="150" height="80"  class="nut">
+          <style>
+            .nut{
+              font-size: 4rem;
+              text-align: center;
+              margin-top: 18px;
+              margin-left: auto;
+              margin-right: auto;
+             }
+          </style>
+          <h1>Nutritions</h1> 
+          <div class="content">
+            <p>
+              Fuel your performance for peak results.
+            </p>
+          </div>
+        </div>
+        <div class="services_card" data-aos="zoom-in" data-aos-delay="200" data-aos-easing="ease-in-out" onclick="navigateTonews()">
+          <img src="news2.jpg" width="150" height="80"  class="nut">
+          <style>
+            .nut{
+              font-size: 4rem;
+              text-align: center;
+              margin-top: 18px;
+              margin-left: auto;
+              margin-right: auto;
+             }
+          </style>
+          <div class="content">
+            <p>
+              Latest National and International news.
+            </p>
+          </div>
+        </div>
+        <div class="services_card" data-aos="zoom-in" data-aos-delay="250" data-aos-easing="ease-in-out" onclick="">
+          <img src="comp.jpeg" width="150" height="80"  class="nut">
+          <style>
+            .nut{
+              font-size: 4rem;
+              text-align: center;
+              margin-top: 18px;
+              margin-left: auto;
+              margin-right: auto;
+             }
+          </style>
+          <h1>Competitions and Challenges</h1>
+          <div class="content">
+            <p>
+              See nearby Trials and Tournaments 
+            </p>
+          </div>
+        </div>
+        <div class="services_card" data-aos="zoom-in" data-aos-delay="300" data-aos-easing="ease-in-out" onclick="navigateToexcercise()">
+          <img src="excercise1.jpeg" width="200" height="110"  class="nut">
+          <style>
+            .nut{
+              font-size: 4rem;
+              text-align: center;
+              margin-top: 18px;
+              margin-left: auto;
+              margin-right: auto;
+             }
+          </style>
+          <h1>Excercise</h1>
+          <div class="content">
+            <p>Excercise with AI/Online Tutors </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team">
+      <div class="title">
+        <h1 data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out">
+          Our Team
+        </h1>
+        <h3 data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out">
+          Meet Our Team Members
+        </h3>
+      </div>
+      <div class="team_container">
+          <div
+            class="team_card"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+            data-aos-easing="ease-in-out"
+          >
+            <img src="Photos/TEAM/hacker.jpg" />
+            <h1>Ayush</h1>
+            <p>Founder</p>
+            <div class="social_link_box">
+              <a href="#"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+      <div class="team_card" data-aos="zoom-in" data-aos-delay="150" data-aos-easing="ease-in-out">
+        <img src="Photos/TEAM/hacker.jpg" />
+        <h1>Kunal</h1>
+        <p>Founder</p>
+        <div class="social_link_box">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <!-- <div class="team_card" data-aos="zoom-in" data-aos-delay="150" data-aos-easing="ease-in-out">
+        <img src="Photos/TEAM/hacker.jpg" />
+        <h1>Anuj</h1>
+        <p>Founder</p>
+        <div class="social_link_box">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div> -->
+      <!-- <div class="team_card" data-aos="zoom-in" data-aos-delay="100" data-aos-easing="ease-in-out">
+        <img src="Photos/TEAM/hacker.jpg" />
+        <h1>kunal</h1>
+        <p>#</p>
+        <div class="social_link_box">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div> -->
+      <!-- <div
+            class="team_card"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-out"
+          >
+            <img src="Photos/TEAM/hacker.jpg" />
+            <h1>Abhishek Chowdhury</h1>
+            <p>Co-Founder</p>
+            <div class="social_link_box">
+                    <a href="http://"><i class="fa-brands fa-linkedin"></i></a> -->
+
+
+      <section id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13962.986656606798!2d77.63037851004486!3d28.96523763146781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c668fdea4d87f%3A0x8795def814a486e7!2sMeerut%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1684842216409!5m2!1sen!2sin"
+          width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section id="contact_us">
+        <div class="contact_container">
+          <div class="img_container">
+            <img src="Photos/Typing.gif" />
+          </div>
+          <div class="login-box" data-aos="zoom-in" data-aos-delay="50" data-aos-easing="ease-in-out">
+            <h2>Contact</h2>
+            <form id="form">
+              <div class="user-box">
+                <input type="text" id="firstName" name="" required="" />
+                <label>First Name</label>
+              </div>
+              <div class="user-box">
+                <input type="text" id="lastName" name="" required="" />
+                <label>Last Name</label>
+              </div>
+              <div class="user-box">
+                <input type="text" id="emailid" name="" required="" />
+                <label>Email</label>
+              </div>
+              <div class="user-box">
+                <input type="text" id="msgContent" name="" required="" />
+                <label>Message</label>
+              </div>
+              <a href="#" id="contactForm">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+            </form>
+          </div>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <div class="waves">
+      <div id="wave1" class="wave"></div>
+      <div id="wave2" class="wave"></div>
+      <div id="wave3" class="wave"></div>
+      <div id="wave4" class="wave"></div>
+    </div>
+    <ul class="social_icon">
+      <li>
+        <a target="”_blank”" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+      <li>
+        <a target="”_blank”" href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </li>
+    </ul>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about_us">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="Script/script.js"></script>
+
+
+  <script>
+    function navigateToOtherPage() {
+      window.location.href = "https://www.youtube.com/watch?v=IUU2cx8j6gM";
+    }
+    function navigateToclubs() {
+      window.location.href = "clubs.html";
+    }
+    function navigateTonutritions() {
+      window.location.href = "anujssss.html";
+    }
+    function navigateTonews() {
+  window.location.href = "https://www.433football.com";
+}
+    function navigateToexcercise() {
+      window.location.href = "exer.html";
+}
+
+    
+  </script>
+</body>
+
+</html>
