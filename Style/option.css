@@ -55,7 +55,7 @@ section {
   -webkit-backdrop-filter: blur(2px);
 }
 .services_card2 {
-  background-image: url(https://tse2.mm.bing.net/th?id=OIP.Aes5sM4A4YTu-_0zQB3H9gAAAA&pid=Api&P=0&h=180);
+  background-color: #090909;
   background-position: center ;
   background-size:cover ;
   height: 250px;
@@ -75,13 +75,13 @@ section {
 }
 .services_card2 h1 {
   margin: auto; 
-  color: hsla(212, 94%, 28%, 0.921);
+  color: hsla(210, 50%, 98%, 0.921);
   font-size: 40.1px;
 }
 
 .services_card2 .content p {
   font-size: 1rem;
-  color: #130909;
+  color: #171616;
   line-height: 20px;
   text-align: center;
 }
@@ -95,7 +95,7 @@ section {
 .services_card2::before,
 .services_card2::after {
   content: "";
-  background: rgba(0, 0, 0, 0.962);
+  background: rgba(243, 241, 241, 0.299);
   width: 180px;
   height: 180px;
   border-radius: 50%;
@@ -119,8 +119,8 @@ section {
 }
 .services_card2 h1 {
   margin: auto; 
-  color: hsla(212, 94%, 28%, 0.921);
-  font-size: 40.1px;
+  color: hsla(210, 24%, 92%, 0.723);
+  font-size: 55px;
 }
 
 .services_card2 .content p {
